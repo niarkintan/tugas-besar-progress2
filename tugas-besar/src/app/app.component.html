@@ -1,0 +1,109 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #99CCFF;">
+    <a class="navbar-brand" href="#">Resep Kita</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Daftar Resep</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<br>
+
+<!-- slideshow -->
+<div class="slider">
+    <app-slider></app-slider>
+</div>
+
+<br>
+
+
+
+<div class="container">
+    <h2 >ARTIKEL MEMASAK</h2>
+  <table width="850px" height="300px">
+    <tr>
+      <td>
+          <img width="350px" height="200px" src="assets/img/news1.jpg" alt="Random third slide">
+      </td>
+      <td>
+            <h5>Oh, Jadi Ini 12 Rahasia Dapur A la Warung
+              Makan Terkenal yang Bikin Jadi Enak? Bisa
+              Dicoba!</h5>
+              <b>Apr 02, 2018</b> <b>Ninda Sabilla</b>
+              <p>Kamu mungkin bertanya-tanya, kenapa masakan yang dibeli di warung makan
+                 lebih enak ketimbang yang kamu masak sendiri? Selain karena memang skill
+                  yang dipunyai oleh tukang masak di warung makan sudah mumpuni?</p>
+      </td>
+    </tr>
+    <tr>
+      <br><br>
+    </tr>
+    <tr>
+      <td>
+          <img width="300px" height="150px" src="assets/img/news2.jpg" alt="Random third slide">
+      </td>
+      <td>
+            <h5>Biar Nggak Melulu Dibikin Nasi Goreng 
+              7 Olahan Nasi Sisa Ini Wajib Kamu Coba!</h5>
+            <b>Apr 02, 2018</b> <b>Niar Kintan</b>
+            <p>Nasi memang menjadi makanan pokok bagi sebagian besar masyarakat Indonesia. Layaknya 
+              sebuah rutinitas, makanan yang satu ini selalu tersedia dengan fresh setiap hari di 
+              meja makan. Tapi pernah nggak sih kamu mendapati nasi sisa yang sebenarnya sayang untuk dibuang?</p>
+      </td>
+    </tr>
+    <tr>
+        <td>
+            <img width="300px" height="150px" src="assets/img/news3.jpg" alt="Random third slide">
+        </td>
+        <td>
+              <h5>Daripada Ditumis atau Direbus Doang, Ini Nih Alternatif Lain Buat Mengolah Sayuran</h5>
+              <b>Apr 02, 2018</b> <b>Ninda Sabilla</b>
+              <p>Nasi memang menjadi makanan pokok bagi sebagian besar masyarakat Indonesia. Layaknya 
+                sebuah rutinitas, makanan yang satu ini selalu tersedia dengan fresh setiap hari di 
+                meja makan. Tapi pernah nggak sih kamu mendapati nasi sisa yang sebenarnya sayang untuk dibuang?</p>
+        </td>
+      </tr>
+  </table>
+</div>
+
+
+
+<!-- intinya -->
+<div class="b">
+<div class="container-fluid">
+  <div style="color: blue;">
+    <!-- <h1>{{title}}</h1> -->
+    <h3>{{description}}</h3>
+  </div>
+ 
+  <nav>
+    <a routerLink="customers" class="btn btn-primary active" role="button" routerLinkActive="active">Customers</a>
+    <a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <p>@Copyright by Niar Ninda 2018</p>
+  </div>
